@@ -10,7 +10,7 @@ function App() {
   const [error, setError] = useState(null);
   const [showMore, setShowMore] = useState(false); // State to control showing additional info
 
-  const apiBaseUrl = "http://luckyotono-001-site1.htempurl.com";
+  const apiBaseUrl = "https://otonomovieapptask.onrender.com";
 
   const searchMovie = async () => {
     try {
@@ -76,7 +76,7 @@ function App() {
     <>
     <div className="banner">
       <div className="header">
-        <h1>Movie Search</h1>
+        <h1>Search a Movie</h1>
       </div>
       <div className="main-search-container">
         <div className="search-container">
@@ -122,7 +122,7 @@ function App() {
 
       <div className="search-history">
         <button onClick={getSearchHistory} className="search-button">
-          Get Search History
+          Search History
         </button>
         <ul>
           {searchHistory.map((history, index) => (
